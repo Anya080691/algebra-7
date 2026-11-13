@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Алгебра 7 клас — інтерактивний підручник (НУШ)</title>
+  <meta name="description" content="Інтерактивний підручник з алгебри для 7 класу: повторення 5–6 класів, теорія з прикладами з життя, тренажер із самоперевіркою та підсумкове тестування.">
+  <meta property="og:title" content="Алгебра 7 клас — інтерактивний підручник">
+  <meta property="og:description" content="Теорія, тренажер із розв'язаннями за різними підручниками, самоперевірка та підготовка до НМТ.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%90%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- MathJax: формули. Версію закріплено, щоб сайт не ламався після оновлень бібліотеки -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contentArea">Перейти до змісту сторінки</a>
+
+  <aside class="sidebar" id="sidebar" aria-label="Зміст підручника">
+    <div class="sidebar-header">
+      <h1>📐 Алгебра 7 клас</h1>
+      <p>Інтерактивний підручник + повторення 5–6 класів</p>
+    </div>
+    <nav aria-label="Теми та розділи">
+      <ul class="nav-list" id="navList"></ul>
+    </nav>
+    <div class="sidebar-footer">
+      <button type="button" id="resetProgress">Скинути мій прогрес</button>
+      <p>Прогрес зберігається лише в цьому браузері.</p>
+    </div>
+  </aside>
+
+  <div class="main-wrapper">
+    <header class="topbar">
+      <button type="button" class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="sidebar">☰ Теми</button>
+      <div class="topbar-title">Основний підручник курсу: «Інтелект України»</div>
+      <span class="nush-badge">НУШ • 12-бальна шкала</span>
+    </header>
+
+    <main class="content-area" id="contentArea" tabindex="-1">
+      <noscript>Для роботи підручника потрібно ввімкнути JavaScript.</noscript>
+    </main>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/textbooks.js"></script>
+  <script src="js/alt-solutions.js"></script>
+  <script src="js/widgets.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
